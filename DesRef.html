@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<title>UX Design - Team Ubuntu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>UX<br>DESIGN<br>TEAM<br>UBUNTU</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="index.html#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Problem Statement</a>
+    <a href="index.html#DesBrief" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Design Brief</a>
+    <a href="index.html#NeedsNarr" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Needs Analysis Narrative</a>
+    <a href="index.html#ConsNarr" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Consent Narrative</a>
+    <a href="index.html#InspDes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inspirational Design</a>
+    <a href="DesDevArt.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Design Development</a>
+    <a href="DesRef.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Design Refinement</a>
+    <a href="index.html#Team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a>
+    <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Team Ubuntu</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<!-- Design Development -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-jumbo"><b>Design Refinement</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>What is Caterpill™?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We want to improve people’s experience of taking medications/supplements when their routine changes by helping them take their medication at the right time.</p>
+
+    <p>We’ve heard from the people that we’ve talked to that they are pretty good at managing taking things when they have a routine to fall back on, but when the routine changes or with increased stressors, things become much harder to handle.</p>
+
+    <p>That’s where Caterpill™ comes in. It helps remind you when to take medicine by reminding you to take your medicine at convenient times by leveraging information from your calendar, your location, and the time of day. In addition, it will be clever about giving reminders, so that the reminders are minimally disruptive, especially when the users are stressed.</p>
+
+    <p>Meanwhile, it is also a natural way to track medication your medication intake, so that you know what you took and when. It’s playful, satisfying, and makes the experience of taking medicine a little more enjoyable.</p>
+
+    <p>Here are some of the features that we have decided to carry forward in the prototyping phase:</p>
+    
+    <ul>
+      <li>Import calendar</li>
+      <li>Take medicine</li>
+      <li>Find best time to take medicine</li>
+      <li>Multiple medications at once</li>
+      <li>Adding medications</li>
+      <li>Moving time to take medications (time window?)</li>
+      <li>Etc. </li>
+    </ul>
+
+
+  </div>
+
+
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>How Caterpill™ Evolved</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      
+      <p>From testing the paper prototype, we learned that the language that we developed for various parts of the design was not well understood by users. For instance, PacMan became Caterpill™ (mostly for branding reasons), boards became widgets, blobs became pills [other examples]. We also tweaked our application’s visual language, mainly through the Add Medication button which was once confused with a Create Profile button. One user also raised the point that since our system is attempting to make “intelligent decisions”, it has the opportunity to make wrong decisions; hence we needed to design a mechanism to enable the user to change a pill’s deadline. We decided to make a long press on a pill show “rail” that the user could slide the pill on through the timeline. Our near future plans also include adding the ability to customize the pill’s appearance, since at every stage so far the identical nature of the pills has caused confusion. </p>
+
+    <center><div class="w3-container">
+      <img src="./images/morescreens.png" style="width:80%" onclick="onClick(this)" alt="Style Guide Sheet">
+    </div></center>
+
+      <p>In starting the prototype, we created a style guide for the consistency of the visual design. (Photo above) We also tweaked our application’s visual language, mainly through the Add Medication button which was once confused with a Create Profile button. Our near future plans also include adding the ability to customize the pill’s appearance, since at every stage so far the identical nature of the pills has caused confusion.</p>
+
+    <center><iframe width="854" height="480" src="https://www.youtube.com/embed/LNvbWRSLrUI" frameborder="0" gesture="media" allowfullscreen></iframe></center>
+
+    <p> We decided to start implementing our prototype using Adobe’s new tool XD. No member of our group had used it before and we were looking forward to learning and using it. It quickly became clear that several of the things we hoped to implement such as having draggable, clickable and swiping features could not be implemented by XD. Therefore we decided to switch to Framer (<a href="https://framer.com/"> https://framer.com/</a>). This was a very good choice for our group since we now could implement what we wanted with Framer’s two views “Design” and “Code”. Framer also allowed us to implement animations using javascript, which many of our core functionality depended on. This was also a better tool for us to design collaboratively since we could use typical version control version control workflows (<a href="https://github.com/njw0709/UXD_Framer">https://github.com/njw0709/UXD_Framer</a>). </p>
+
+    <center><iframe width="600" height="300" src="https://www.youtube.com/embed/LNvbWRSLrUI?start=18&end=33" frameborder="0" gesture="media" allowfullscreen></iframe></center>
+
+    <p>Prototyping in Framer forced us to think through our animated interactions. We made use of cognitive walkthroughs in designing the interaction around the animations, such as moving the Caterpill™. It quickly became clear that we needed to think about a few crucial corner cases, mainly taking single and multiple pills now or in the near future. For multiple pills, it’s important to be able to quickly take all pills at once but also take only a subset. Our solution was to animate available pills such that they separate so you could carefully pick a subset or swipe across the line they draw. (See Video Above)</p>
+
+    <p>Such interaction of indicating multiple pills taken also raised a concern of “undoing” the action when wrong pills were taken by the Caterpill™. We addressed this issue by having a confirmation dialogue pop up, adding an extra step for users to correct for mistakes. The core interaction of “taking the pill” seemed well defined at this point, while the one remaining concern we haven’t fully addressed being the case for a large number of pills.</p>
+
+    <p>The placement of the Caterpill™ and the current time was improved with Framer. While it was very hard to indicate the current time with a line on paper prototype and on XD on a scrollable page, we were able to make the current time line and the Caterpill™ a sticky header, where if scrolled far into the future, the entire header would grey out with an up arrow showing on the side.</p>
+
+    <center><iframe width="600" height="300" src="https://www.youtube.com/embed/LNvbWRSLrUI?start=11&end=17" frameborder="0" gesture="media" allowfullscreen></iframe></center>
+
+    <p>We also decided when prototyping with Framer was to hide the details of daily schedule in the main homepage, and have it be pulled out as if a navigation drawer from the left on swipe. The idea was to reduce the amount of information on the main page while allowing the user to get more information when needed. We also like to think about CaterPill as an app that uses a calendar, rather than a calendar app. That is to say, we intentionally limit functionality only revolving around the calendar. (See Movie Above)</p>
+
+    <center><iframe width="600" height="300" src="https://www.youtube.com/embed/LNvbWRSLrUI?start=2&end=5" frameborder="0" gesture="media" allowfullscreen></iframe></center>
+
+    <p>Representing the time window also evolved in this phase. While we wanted to have the pills on the main screen be elongated to represent the time that the users can take certain medication, representing several medications over large window of time made the screen confusing. We then decided to make use of long press on pills to show a rail to indicate the flexibility of scheduling. This was based on a user’s feedback that since our system is attempting to make “intelligent decisions”, it may make decisions that don’t work for the user; hence we needed to design a mechanism to enable the user to change a pill’s deadline. (See Movie Above)</p>
+
+    <center><iframe width="600" height="300" src="https://www.youtube.com/embed/LNvbWRSLrUI?start=33&end=43" frameborder="0" gesture="media" allowfullscreen></iframe></center>
+
+    <p>We have also moved away from pulling out the medication information in a chat dialogue format on the main page to pulling out a new screen. This allows users have all of their currently taking medications in a list view. It made sense that the users would be able to pull up the information about the medication from the list too, consequently leading us to change the chat dialogue style of presenting that information. (See Movie Above)</p>
+
+    <p>Monthly calendar view was also added based off of feedback from a user in the previous phase. The current prototype’s monthly calendar is not yet fully implemented, but this screen will allow users to see the summary of how long they have taken each medication — particularly relevant for medication such as antibiotics, which are taken for a certain number of days.</p>
+
+    <center><iframe width="600" height="300" src="https://www.youtube.com/embed/LNvbWRSLrUI?start=43&end=50" frameborder="0" gesture="media" allowfullscreen></iframe></center>
+
+    <p>One of the features that we have not yet nailed down is how to let users set recurrences when adding new pills. The current version is intended to put the burden of entering a lot of information off from the users by asking only how many times a day they need to take the medication. However, we need to look into different types of medications to really decide what should be represented in the page. (See Movie Above)</p>
+
+  </div>
+
+    <div class="w3-container" id="MovingForward" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Plans on Moving Forward with Caterpill™</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We got a lot of useful feedback from our heuristic evaluation, particularly about the lack of signifiers. There are also a few bugs that needed to be fixed, and some decisions to omit features (such as setup) made the experience a lot harder to navigate. Feedback we expected (but didn’t address in the time that we had to make the prototype) included adding icons to each pill on the main screen to distinguish them, the ability to edit/delete pills, and creating a setup experience, all of which we plan on doing for the next phase. They didn’t all understand that they could move the Caterpill™ to take pills, so we will try adding a drop shadow to indicated that it isn’t a background element. It was also pointed out that if the user accidentally confirms taking a pill, there is no way to undo that action. Currently, eaten pills disappear, and the solution to this problem may be moving them above the line (into the past), and being able to pull them back from there. This new design may nullify the need for a confirmation box if it is sufficiently discoverable and easy to use (particularly with many pills close to each other). Few noticed that they could pull out the calendar from the side, and strongly suggested that the collapsed calendar took more space and displayed the calendar event name/time, which would also solve not knowing what time scale the app is looking at. We will also rethink how to access the monthly calendar view as it may not be appropriately located under the All Pills button (bottom right). There also work to be done around navigating between the three different pages — Eating Pills, All Pills and Monthly view. The later was also confusing to the evaluators because it had no implemented functionality. The report also shows a lot of anxiety related to the workflow for adding pills which, as mentioned previously, as one of our main focuses for future steps.</p>
+
+    <p><a href="https://docs.google.com/document/d/11P2tPmsFRQp25yLYic73TC6TGXdRFE6Z9mI905yizbs/edit?usp=sharing">Link to the Heuristic Evaluation</a></p>
+
+    <p>There are some features we would like to implement that were not mentioned in the evaluation but we feel important for our product. These include to be able to add other reminders besides pills and to be able to edit already entered information.</p>
+
+    <p>Based on our design choices and that we want to create a quite visual product with more interactions than just clicking, there are some tradeoffs. We have realised that we need to provide more signifiers in how to use these new features. This can be done in two different ways, either to make it clearer how to interact with our product when it is already setup or by learning the interactions by the user setting it up. Our original thought was that since the user has to set up the app, they are going to learn about the features during this time. This setup phase is something we have not implemented yet since this was something we planned to during the final refinement phase. For the next phase we have to decide in which direction we want to proceed in. </p>
+
+    <p>A design decision we made was not to have a menu/settings that follows common design patterns, which can make our product harder to understand. While implementing our product and planning on adding more features, we have realised that a menu might be necessary at a later phase. Another tradeoff is that we can currently only manage around 8 pills in a horizontal line (even less when we increase the size of the calendar in collapsed view).</p>
+
+
+  </div>
+
+
+  <div class="w3-container" id="Teamwork_desref" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Distribution of Team Effort</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The teamwork for this phase has been working well and we have had good communication in our group. Since this phase have evolved around designing and implementing our product, we decided to divide into these two workgroups and work in switching pairs. The paris were divided based on schedule to ensure that all members of our group got a chance to do both design and implement. This worked very well for or group and distributed work time equally.</p>
+    <p>During our meetings with the entire group we communicated how much time we had during that specific week, how much effort we were able to put in in the next sprint and made sure to balance it. We also discussed the chart format for effort and all agreed we contributed in different ways to equal workload. For our group, the chart format was therefore not useful for us to proceed our project.</p>
+  </div>
+
+
+  <!-- Design Development Artifacts -->
+  <div class="w3-container" id="DesrefArt" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Design Refinement Archive</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <div class="w3-row-padding">
+      <center><div class="w3-container">
+        <img src="./images/IMG_1627.JPG" style="width:50%" onclick="onClick(this)" >
+        <img src="./images/IMG_1644.JPG" style="width:50%" onclick="onClick(this)" >
+        <img src="./images/IMG_1645.JPG" style="width:50%" onclick="onClick(this)" >
+        <img src="./images/IMG_1646.JPG" style="width:50%" onclick="onClick(this)" >
+        <img src="./images/IMG_1647.JPG" style="width:50%" onclick="onClick(this)" >
+      </div></center>
+    </div>
+
+
+ 
+    </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- End page content -->
+  </div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<style type="text/css">
+  .rotate90 {
+    padding-top: 100px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    padding-bottom: 100px;
+  }
+</style>
+
+</body>
+</html>
