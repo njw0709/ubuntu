@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html>
+<title>UX Design - Team Ubuntu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>UX<br>DESIGN<br>TEAM<br>UBUNTU</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="index.html#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Problem Statement</a>
+    <a href="index.html#DesBrief" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Design Brief</a>
+    <a href="index.html#NeedsNarr" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Needs Analysis Narrative</a>
+    <a href="index.html#ConsNarr" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Consent Narrative</a>
+    <a href="index.html#InspDes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inspirational Design</a>
+    <a href="DesDevArt.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Design Development</a>
+    <a href="DesRef.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Design Refinement</a>
+    <a href="Finalref.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Final Refinement</a>
+    <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a>
+    <a href="team.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Team Ubuntu</span>
+</header>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Design Development -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-jumbo"><b>Final Refinement</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Usability Testing Plan</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We want to find out how users interact with the app while actually taking medication and how they recover from errors. To do this, we investigate these two separate things in our experiment. </p>
+
+    <p>The users we want are people who take multiple medications or supplements during the course of a day, but not more than 6 or 7. They have trouble remembering and taking medications consistently, and have busy schedules. They use a digital calendar. Taking medications at slightly different times is not life-threatening for them.</p>
+
+    <p><b>Part 1: Interaction with real objects</b></p>
+
+    <p>The first part of the experiment helps us see how the user behaves when taking medicine, and when they record things on the app relative to when they perform the analogous actions in real life. </p>
+
+    <p><i>Hypothesis:</i></p>
+
+    <p>Users will indicate taking their medicine in app immediately following them actually taking their medicine.</p>
+
+    <p>To test this hypothesis, we don’t need to present variants of our design- we will keep the app constant, because we want to observe how the user inserts the app into their routine- the variability will come from the users. </p>
+
+    <p>We will measure the time between the user taking the medication and when they record it in-app. We will also document the order of the actions.</p>
+
+    <p>Because the variability comes from the users, we would ideally like to test with a larger sample size (~30), and see whether the time between medication and recording (and the order) changes with repeated use as the user gets more familiar with the app, as there may be a difference between how they behave during first-time use as opposed to when they have more understanding of the app.</p>
+
+    <p><b>Part 2: Recovering from errors</b></p>
+
+    <p>The second part of the experiment involves A/B testing for two fundamentally different approaches to how to deal with people accidentally swiping on medications they haven’t taken.</p>
+
+    <p><i>Hypothesis:</i></p>
+
+    <p>The confirmation model will take more time for users on average, but will be faster than the undo model upon making an error. Most users will not make errors often enough to be helped by having confirmation always on. </p>
+
+    <p>We will present users with two apps that have undoing as an option. App A have a confirmation window each time you indicate you have taken a medication, while App B will require you to go through the undo process if you do not swipe correctly. </p>
+
+    <p>This would ideally be conducted with at least 10 users, where we measure how long it takes to go through the two procedures, how often they make mistakes while swiping, and how long it takes them to discover undoing. </p>
+
+    <p><i>*We have no prior experience in the design of controlled experiments for user testing.</i></p>
+
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
